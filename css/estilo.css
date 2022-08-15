@@ -108,7 +108,7 @@ a {
 
 /* estilo imagenes */
 .cajaGrande {
-  display:inline;
+  display: inline;
   width: 100%;
 }
 .antro {
@@ -116,16 +116,14 @@ a {
   margin: 0;
   padding: 1rem;
   width: 100%;
-display:inline
-  
+  display: inline;
 }
 
 .imgAntro {
   border: 2.5px;
   width: 50%;
   height: 65rem;
-  display:inline
-
+  display: inline;
 }
 
 .cajaAntro {
@@ -136,10 +134,6 @@ display:inline
   width: 50%;
   align-items: center;
   margin-top: 5rem;
-  
-  
-
-  
 }
 
 /* box modelling  flexbox va en el contenedor padre */
@@ -167,6 +161,11 @@ display:inline
   display: flex;
 }
 
+.presencial:hover {
+  background-color: grey;
+  height: 50rem;
+  width: 50rem;
+}
 .presencial {
   text-align: center;
   display: block;
@@ -181,6 +180,11 @@ display:inline
   text-align: center;
   display: block;
 }
+.videollamada:hover {
+  background-color: grey;
+  height: 50rem;
+  width: 50rem;
+}
 
 .virtual {
   border: 4px whitesmoke solid;
@@ -191,7 +195,11 @@ display:inline
   text-align: center;
   display: block;
 }
-
+.virtual:hover {
+  background-color: grey;
+  height: 50rem;
+  width: 50rem;
+}
 section button {
   border-radius: 5px;
   background-color: papayawhip;
@@ -276,10 +284,20 @@ nav {
   border-style: dotted;
   display: block;
   text-align: center;
-  margin: 2rem;
+  margin: 10rem;
+  margin-top: 5rem;
   padding: 2rem;
   justify-content: center;
 }
+
+.cambio:hover {
+  background-color: grey ;
+  height: fit-content;
+  width: 90%;
+  margin-left: 5rem;
+  margin-top: 5rem;
+}
+
 
 .beneficios {
   grid-area: beneficios;
@@ -287,9 +305,17 @@ nav {
   border-style: dotted;
   display: block;
   text-align: center;
-  margin: 2rem;
+  margin: 10rem;
+  margin-top: 2rem;  
   padding: 2rem;
   justify-content: center;
+}
+.beneficios:hover {
+  background-color: grey ;
+  height: fit-content;
+  width: 90%;
+  margin-left: 5rem;
+  margin-top: 5rem;
 }
 
 footer {
@@ -367,6 +393,7 @@ footer h3 {
     text-align: center;
     display: block;
   }
+ 
   .beneficios {
     text-align: center;
     display: block;
