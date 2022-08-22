@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 /*selector { 
     propiedad:valor;
@@ -107,35 +108,43 @@ a {
 } */
 
 /* estilo imagenes */
-.cajaGrande {
-  display: inline;
-  width: 100%;
-}
+
 .antro {
   border: 2.5px;
   margin: 0;
   padding: 1rem;
-  width: 100%;
+  width: 50%;
   display: inline;
 }
 
 .imgAntro {
   border: 2.5px;
-  width: 50%;
-  height: 65rem;
-  display: inline;
+  width: 40rem;
+  height: 50rem;
+
 }
 
+
 .cajaAntro {
-  border: 0.5rem;
-  margin: 0;
-  margin-left: 50%;
-  padding: 1rem;
+  border: 0.5rem whitesmoke;
+  border-style: dashed;
+    margin: 0;
+ padding: 1rem;
   width: 50%;
   align-items: center;
   margin-top: 5rem;
+align-items: center;
 }
 
+.cajaAntro:hover {
+  background-color: grey;
+  height: fit-content;
+  width: 90%;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  align-items: center;
+
+}
 /* box modelling  flexbox va en el contenedor padre */
 
 .contenedorB {
@@ -321,7 +330,7 @@ nav {
 footer {
   grid-area: footer;
   background-color: white;
-  padding: 1rem;
+  /* padding: 1rem; */
   width: 100%;
 }
 footer h3 {
@@ -453,9 +462,9 @@ footer h3 {
     text-align: center;
   }
 
-  .logoSf {
-    margin: 10rem;
-  }
+  /* .logoSf {
+    /* margin: 10rem; 
+  } */
   html {
     font-size: 50%;
   }
