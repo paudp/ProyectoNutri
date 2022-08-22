@@ -100,6 +100,7 @@ a {
   align-items: center;
 }
 
+
 /* fondos*/
 
 /* header {
@@ -108,7 +109,9 @@ a {
 } */
 
 /* estilo imagenes */
-
+/* .carrusel {
+  height: 55rem;
+} */
 .antro {
   border: 2.5px;
   margin: 0;
@@ -172,7 +175,7 @@ align-items: center;
 
 .presencial:hover {
   background-color: grey;
-  height: 50rem;
+  height: auto;
   width: 50rem;
 }
 .presencial {
@@ -191,7 +194,7 @@ align-items: center;
 }
 .videollamada:hover {
   background-color: grey;
-  height: 50rem;
+  height: auto;
   width: 50rem;
 }
 
@@ -206,20 +209,24 @@ align-items: center;
 }
 .virtual:hover {
   background-color: grey;
-  height: 50rem;
+  height: auto;
   width: 50rem;
 }
 section button {
   border-radius: 5px;
   background-color: papayawhip;
   border-color: peachpuff;
-  width: 10rem;
-  height: 3rem;
+  /* width: 2rem;
+  height: 3rem; */
   cursor: pointer;
   display: block;
   align-items: center;
-  margin-left: 15rem;
-  margin-top: 5rem;
+  /* margin-left: 15rem;
+  margin-top: 5rem; */
+}
+.colorBoton {
+  background-color: papayawhip;
+  border-color: peachpuff;
 }
 
 /*contacto*/
