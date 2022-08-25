@@ -258,6 +258,13 @@ section button {
   align-items: center;
 }
 
+.links {
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  margin-left: 45%;
+}
+
 /* grid
 todo va a en el contenedor padre
 .class { display grid
