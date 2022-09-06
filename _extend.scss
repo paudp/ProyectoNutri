@@ -1,0 +1,11 @@
+.titulos {
+color: white;
+font-size: 5rem;
+text-align: center;
+font-weight: bold
+}
+
+.parrafo {
+font-size:2rem ;
+@extend .titulos
+}

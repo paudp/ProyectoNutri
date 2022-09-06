@@ -1,0 +1,59 @@
+/*contacto*/
+
+body.contenedorD {
+  grid-template-areas:
+    "encabezado"
+    "arranca"
+    "formulario"
+    "footer";
+
+  section.Arranca {
+    h1 {
+      color: $color_2;
+      grid-area: arranca;
+    }
+
+    h3.arranca {
+      a {
+        color: $color_2;
+        text-decoration: none;
+      }
+    }
+  }
+
+  section.formulario {
+    grid-area: formulario;
+
+    .cajaGrande {
+      border: $ancho-bordes;
+      margin-top: 0px;
+      padding: 10px;
+      position: relative;
+      grid-area: cajaGrande;
+
+      h2 {
+        text-align: left;
+      }
+    }
+
+    .cajaForm {
+      border: $bordes-cajas $color_2 solid;
+      background-color: $fondos-animaciones;
+      margin: 2rem;
+      padding: 1rem;
+      position: relative;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+    }
+
+    .formulario {
+      font-family: "Oswald", sans-serif;
+      color: white;
+
+      text-align: center;
+      display: block;
+      align-items: center;
+    }
+  }
+}

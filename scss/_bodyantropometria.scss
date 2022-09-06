@@ -1,0 +1,42 @@
+/*ANTROPOMETRIAS*/
+
+body.contenedorE {
+  width: 100%;
+  grid-template-areas:
+    "header"
+    "antro"
+    "footer";
+  section.antro {
+    display: inline-block;
+
+    img {
+      width: 50rem;
+      height: 60rem;
+      display: inline-block;
+    }
+    section.cajaAntro {
+      display: inline-block;
+      border: 0.5rem whitesmoke;
+      border-style: dashed;
+      padding: 1rem;
+      align-items: center;
+      margin-top: 5rem;
+      width: 100%;
+      &:hover {
+        background-color: $fondos-animaciones;
+        align-items: center;
+      }
+    }
+
+    header {
+      grid-area: header;
+    }
+    nav {
+      grid-area: nav;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+  }
+}

@@ -1,631 +1,407 @@
-* {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-/*selector { 
-    propiedad:valor;
-}*/
-
-/* FUENTES GOOGLE */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
-
-.logoSf {
-  width: 40rem;
-  height: 20rem;
-}
-/* 1 REM = 16 PX PONER ARRIBA DE TODO AL 65.5%  PARA QUE 1 REM=1PX*/
-html {
-  font-size: 62.5%;
-}
-
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap";
 header {
   width: 100%;
-}
-.encabezado {
-  width: 100%;
-  background-color: white;
-}
+  background-color: white; }
+  header img {
+    width: 45rem;
+    height: 20rem; }
+  header li {
+    color: orangered;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    display: inline;
+    margin: 1rem; }
+    header li a {
+      color: orangered;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin: 2rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: orangered;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      align-items: center; }
 
-.none {
-  display: none;
-}
-.display {
-  display: inline;
-  margin: 1rem;
-}
+/*	SECTION ARREGLAR EL CARRUSEL */
+.contenedor {
+  display: grid;
+  grid-template-areas: "header" "nav" "carrusel" "cambio" "beneficios" "footer";
+  overflow-y: hidden; }
+  .contenedor section.carrusel {
+    margin-top: 0;
+    grid-area: carrusel; }
+  .contenedor section.principal {
+    border-color: white;
+    border-style: dotted;
+    display: block;
+    text-align: center;
+    margin: 3rem;
+    margin-top: 2rem;
+    padding: 2rem; }
 
 h1 {
-  color: orangered;
-  font-size: 5rem;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  display: none; }
 
-/* cascada
-el !important se usa cuando no le encontramos solucion a un problema, mata todo y permite solucoinar rapido, pero no es lo mejor. Max usar 3
- lo mismo los br*/
-
-/*herencia. Se puede romper cuando le doy un colo a la etiqueta a hay que darle color directamente a esa etiqueta*/
-
-body {
-  font-size: 2rem;
-  background-color: #ff9338;
-  width: 100%;
-}
-
-li {
-  color: orangered;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: bold;
-}
-li a {
-  color: orangered;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 2rem;
-  text-align: center;
-}
-
-li {
-  list-style-type: none;
-}
-/*propiedades de css*/
-
-/* . para clases */
-.none {
-  display: none;
-}
-
-.titulos {
+h2 {
+  justify-content: center;
   text-align: center;
   font-family: "Oswald", sans-serif;
   color: white;
   margin: 3rem;
-}
+  font-size: 3rem;
+  overflow-y: hidden; }
 
-.parrafo {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  align-items: center;
-}
-
-
-/* fondos*/
-
-/* header {
-  background-image: url("../imagenes/7dbaab8bf95fa4b6e61a4158fc4acd25.jpg");
-  background-repeat: no-repeat;
-} */
-
-/* estilo imagenes */
-/* .carrusel {
-  height: 55rem;
-} */
-.antro {
-  border: 2.5px;
-  margin: 0;
-  padding: 1rem;
-  width: 50%;
-  display: inline;
-}
-
-.imgAntro {
-  border: 2.5px;
-  width: 40rem;
-  height: 50rem;
-
-}
-
-
-.cajaAntro {
-  border: 0.5rem whitesmoke;
-  border-style: dashed;
-    margin: 0;
- padding: 1rem;
-  width: 50%;
-  align-items: center;
-  margin-top: 5rem;
-align-items: center;
-}
-
-.cajaAntro:hover {
-  background-color: grey;
-  height: fit-content;
-  width: 90%;
-  margin-left: 5rem;
-  margin-top: 5rem;
-  align-items: center;
-
-}
-/* box modelling  flexbox va en el contenedor padre */
-
-.contenedorB {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "servicios servicios servicios"
-    "presencial videollamada virtual"
-    "footer footer footer";
-  width: 100%;
+h3 {
   justify-content: center;
-}
-
-.servicios {
-  grid-area: servicios;
-}
-
-.presencial {
-  border: 4px whitesmoke solid;
-  border-style: dashed;
-  margin: 1rem;
-  padding: 3rem;
-  display: flex;
-}
-
-.presencial:hover {
-  background-color: grey;
-  height: auto;
-  width: 50rem;
-}
-.presencial {
   text-align: center;
-  display: block;
-}
-
-.videollamada {
-  border: 4px whitesmoke solid;
-  border-style: dashed;
-  margin: 1rem;
-  padding: 3rem;
-
-  text-align: center;
-  display: block;
-}
-.videollamada:hover {
-  background-color: grey;
-  height: auto;
-  width: 50rem;
-}
-
-.virtual {
-  border: 4px whitesmoke solid;
-  border-style: dashed;
-  margin: 1rem;
-  padding: 1rem;
-
-  text-align: center;
-  display: block;
-}
-.virtual:hover {
-  background-color: grey;
-  height: auto;
-  width: 50rem;
-}
-section button {
-  border-radius: 5px;
-  background-color: papayawhip;
-  border-color: peachpuff;
-  /* width: 2rem;
-  height: 3rem; */
-  cursor: pointer;
-  display: block;
-  align-items: center;
-  /* margin-left: 15rem;
-  margin-top: 5rem; */
-}
-.colorBoton {
-  background-color: papayawhip;
-  border-color: peachpuff;
-}
-
-/*contacto*/
-.cajaGrande {
-  border: 2.5px;
-  margin: 0px;
-  padding: 10px;
-  position: relative;
-  /* display: flex; */
-}
-
-.cajaForm {
-  border: 4px white solid;
-  margin: 2rem;
-  padding: 1rem;
-  width: 50rem;
-  margin-left: 30%;
-  position: relative;
-  align-items: center;
-  text-align: center;
-}
-
-.formulario {
   font-family: "Oswald", sans-serif;
   color: white;
-  margin: 40px;
+  margin: 3rem;
+  font-size: 3rem;
+  overflow-y: hidden;
+  grid-area: "beneficios"; }
+
+p {
   text-align: center;
-  display: block;
-  align-items: center;
-}
+  font-family: "Oswald", sans-serif;
+  color: white;
+  overflow-y: hidden;
+  margin: 3rem; }
 
-.links {
-  text-align: center;
-  align-items: center;
-  position: absolute;
-  margin-left: 45%;
-}
+body.contenedorC {
+  grid-template-areas: "footer" "sobreMi" "footer"; }
+  body.contenedorC section.sobreMi {
+    border-color: white;
+    border-style: dotted;
+    display: block;
+    text-align: center;
+    margin: 3rem;
+    margin-top: 2rem;
+    padding: 2rem; }
+    body.contenedorC section.sobreMi .sobremi {
+      grid-area: sobreMi; }
+    body.contenedorC section.sobreMi h1 .titulos, body.contenedorC section.sobreMi h1 .parrafo {
+      color: orangered;
+      font-size: 5rem;
+      text-align: center;
+      font-family: "Oswald", sans-serif; }
+    body.contenedorC section.sobreMi p {
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      color: white;
+      overflow-y: hidden;
+      margin: 3rem; }
+    body.contenedorC section.sobreMi p a {
+      color: white;
+      text-decoration: none; }
 
-/* grid
-todo va a en el contenedor padre
-.class { display grid
-  
-  inspector elementos
-  ver si tiene el cartelito de grid
-  1fr solo se usa en grid y es lo mismo que usar el 50%
-  cuando algo aparece tachado es porque la ppropiedad esta obsoleta
-  
-  aside es para cosas relacionadas indirectamente a la info de la pagina*/
-
-.contenedor {
+/*SERVICIOS/*/
+body {
   display: grid;
-  grid-template-areas:
-    "header"
-    "nav"
-    "cambio"
-    "beneficios"
-    "footer";
-}
+  grid-template-areas: "header header header" "servicios servicios servicios" "presencial videollamada virtual" "footer footer footer"; }
+  body header {
+    grid-area: "header"; }
+  body div {
+    color: white;
+    font-style: "Oswald", sans-serif;
+    overflow-y: hidden; }
+  body section.servicios {
+    grid-area: "presencial";
+    grid-area: "virtual";
+    grid-area: "videollamada";
+    display: grid-row;
+    border-color: white;
+    border-style: dotted;
+    display: block;
+    text-align: center;
+    margin: 3rem;
+    margin-top: 2rem;
+    padding: 2rem; }
+    body section.servicios:hover {
+      display: grid-row;
+      background-color: grey;
+      height: auto;
+      width: 50rem; }
+    body section.servicios section button {
+      border-radius: 5px;
+      background-color: papayawhip;
+      border-color: peachpuff;
+      cursor: pointer;
+      display: block;
+      align-items: center; }
+    body section.servicios .colorBoton {
+      background-color: papayawhip;
+      border-color: peachpuff; }
+    body section.servicios footer {
+      grid-area: "footer"; }
 
-.cajaAntro {
-  grid-area: cajaAntro;
-}
+/*ANTROPOMETRIAS*/
+body.contenedorE {
+  width: 100%;
+  grid-template-areas: "header" "antro" "footer"; }
+  body.contenedorE section.antro {
+    display: inline-block; }
+    body.contenedorE section.antro img {
+      width: 50rem;
+      height: 60rem;
+      display: inline-block; }
+    body.contenedorE section.antro section.cajaAntro {
+      display: inline-block;
+      border: 0.5rem whitesmoke;
+      border-style: dashed;
+      padding: 1rem;
+      align-items: center;
+      margin-top: 5rem;
+      width: 100%; }
+      body.contenedorE section.antro section.cajaAntro:hover {
+        background-color: grey;
+        align-items: center; }
+    body.contenedorE section.antro header {
+      grid-area: header; }
+    body.contenedorE section.antro nav {
+      grid-area: nav; }
+    body.contenedorE section.antro footer {
+      grid-area: footer; }
 
-.antro {
-  grid-area: antro;
-}
-header {
-  grid-area: header;
-}
+/*contacto*/
+body.contenedorD {
+  grid-template-areas: "encabezado" "arranca" "formulario" "footer"; }
+  body.contenedorD section.Arranca h1 {
+    color: white;
+    grid-area: arranca; }
+  body.contenedorD section.Arranca h3.arranca a {
+    color: white;
+    text-decoration: none; }
+  body.contenedorD section.formulario {
+    grid-area: formulario; }
+    body.contenedorD section.formulario .cajaGrande {
+      border: 2.5px;
+      margin-top: 0px;
+      padding: 10px;
+      position: relative;
+      grid-area: cajaGrande; }
+      body.contenedorD section.formulario .cajaGrande h2 {
+        text-align: left; }
+    body.contenedorD section.formulario .cajaForm {
+      border: 4px white solid;
+      background-color: grey;
+      margin: 2rem;
+      padding: 1rem;
+      position: relative;
+      align-items: center;
+      text-align: center;
+      width: 50%; }
+    body.contenedorD section.formulario .formulario {
+      font-family: "Oswald", sans-serif;
+      color: white;
+      text-align: center;
+      display: block;
+      align-items: center; }
 
-nav {
-  grid-area: nav;
-}
+.titulos, .parrafo {
+  color: white;
+  font-size: 3rem; }
 
-.cambio {
-  grid-area: cambio;
-  border-color: white;
-  border-style: dotted;
-  display: block;
+.titulos, .parrafo {
+  color: white;
+  font-size: 5rem;
   text-align: center;
-  margin: 10rem;
-  margin-top: 5rem;
-  padding: 2rem;
-  justify-content: center;
-}
+  font-weight: bold; }
 
-.cambio:hover {
-  background-color: grey ;
-  height: fit-content;
-  width: 90%;
-  margin-left: 5rem;
-  margin-top: 5rem;
-}
+.parrafo {
+  font-size: 2rem; }
 
-
-.beneficios {
-  grid-area: beneficios;
-  border-color: white;
-  border-style: dotted;
-  display: block;
+.parrafosConEstilo {
   text-align: center;
-  margin: 10rem;
-  margin-top: 2rem;  
-  padding: 2rem;
-  justify-content: center;
-}
-.beneficios:hover {
-  background-color: grey ;
-  height: fit-content;
-  width: 90%;
-  margin-left: 5rem;
-  margin-top: 5rem;
-}
+  font-family: "Oswald", sans-serif;
+  color: white;
+  overflow-y: hidden;
+  margin: 3rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 2rem;
+  background-color: #ff9338;
+  width: 100%; }
 
 footer {
   grid-area: footer;
   background-color: white;
-  /* padding: 1rem; */
   width: 100%;
-}
-footer h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-  color: #ff9338;
-  text-align: center;
-}
-
-.navFooter {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 100%;
-}
+  align-items: center; }
+  footer h3 {
+    margin-top: 3rem;
+    font-size: 4rem;
+    font-family: "Oswald", sans-serif;
+    font-style: italic;
+    color: orangered;
+    text-align: center;
+    overflow-y: hidden; }
+  footer h4 {
+    color: grey;
+    text-align: center;
+    overflow-y: hidden;
+    margin-bottom: 0; }
+  footer ul {
+    display: inline;
+    align-items: center;
+    margin-left: 42.5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-decoration: none; }
+    footer ul .navFooter {
+      display: inline;
+      align-items: center; }
+    footer ul a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      align-items: center; }
+    footer ul li a img {
+      width: 5rem;
+      height: 5rem;
+      align-items: center; }
 
 /*responsive*/
-
 @media (min-width: 700px) and (max-width: 1100px) {
   .contenedor {
     display: grid;
-    grid-template-areas:
-      "header"
-      "cambio"
-      "beneficios"
-      "footer";
+    grid-template-areas: "header" "carrusel" "cambio" "beneficios" "footer";
     width: 100%;
-    justify-content: center;
-  }
-
+    justify-content: center; }
   section {
+    text-align: center; }
+    section button {
+      width: 100px;
+      height: 50px;
+      margin-left: 30rem; }
+  .parrafo {
+    text-align: center; }
+  .link {
+    text-align: center; }
+  .contenedorB {
+    display: grid;
+    grid-template-areas: "header" "servicios" "presencial" "videollamada" "virtual" "footer";
+    width: 100%;
+    justify-content: center; }
+  .presencial {
+    align-items: center; }
+  .videollamada {
+    align-items: center; }
+  .virtual {
+    align-items: center; }
+  .contenedorC {
+    display: grid;
+    grid-template-areas: "header" "sobreMi" "footer";
+    width: 100%;
+    justify-content: center; }
+  .contenedorD {
+    display: grid;
+    grid-template-areas: "header" "arranca" "redes" "formulario" "footer";
+    width: 100%;
+    justify-content: center; }
+  .cajaForm {
+    width: 80%;
+    align-items: center;
     text-align: center;
-  }
-
-  section button {
-    width: 100px;
-    height: 50px;
-  }
-}
-
-/*vista movil*/
+    position: relative;
+    margin: 0%; }
+  .formulario {
+    font-family: "Oswald", sans-serif;
+    color: orangered;
+    margin: 0;
+    text-align: center;
+    display: block;
+    align-items: center; }
+  .link {
+    text-align: center; }
+  .contenedorE {
+    display: grid;
+    grid-template-areas: "header" "antro" "cajaAntro" "footer";
+    width: 100%;
+    justify-content: center; }
+  .logoSf {
+    align-items: center; } }
 
 @media (max-width: 699px) {
   .contenedor {
     display: grid;
-    grid-template-areas:
-      "header"
-      "cambio"
-      "beneficios"
-      "footer";
+    grid-template-areas: "header" "carrusel" "cambio" "beneficios" "footer";
     width: 100%;
-    justify-content: center;
-    margin-left: 3rem;
-  }
+    justify-content: center; }
   html {
-    font-size: 60%;
-  }
-
-  /* .contenedor {
-    width: 100%;
-    } */
+    font-size: 50%; }
   header {
     height: auto;
-    width: auto;
-  }
+    width: auto; }
   .cambios {
     text-align: center;
-    display: block;
-  }
- 
+    display: block; }
   .beneficios {
     text-align: center;
-    display: block;
-  }
+    display: block; }
   footer {
-    width: 100%;
-  }
-}
-
-/*servicios*/
-
-@media (min-width: 700px) and (max-width: 1100px) {
+    display: inline-block;
+    overflow-x: hidden; }
+    footer .navFooter {
+      display: inline-block;
+      align-items: center; }
   .contenedorB {
     display: grid;
-    grid-template-areas:
-      "header"
-      "servicios"
-      "presencial"
-      "videollamada"
-      "virtual"
-      "footer";
-    width: 100%;
-    justify-content: center;
-  }
-
-  .presencial {
-    align-items: center;
-  }
-  .videollamada {
-    align-items: center;
-  }
-
-  .virtual {
-    align-items: center;
-  }
-
-  section button {
-    margin-left: 30rem;
-  }
-}
-
-@media (max-width: 699px) {
-  .contenedorB {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "servicios"
-      "presencial"
-      "videollamada"
-      "virtual"
-      "footer";
-    width: 100%;
-  }
-
+    grid-template-areas: "header" "servicios" "presencial" "videollamada" "virtual" "footer";
+    width: 100%; }
   .display {
     display: block;
-    text-align: center;
-  }
-
-  /* .logoSf {
-    /* margin: 10rem; 
-  } */
-  html {
-    font-size: 50%;
-  }
-
+    text-align: center; }
   .presencial {
-    align-items: center;
-  }
+    align-items: center; }
   .videollamada {
-    align-items: center;
-  }
-
+    align-items: center; }
   .virtual {
-    align-items: center;
-  }
-
+    align-items: center; }
   section button {
-    margin-left: 20rem;
-  }
-
+    align-items: center; }
   .navFooter {
-    display: block;
-  }
-}
-
-/*sobremi*/
-@media (min-width: 700px) and (max-width: 1100px) {
+    display: block; }
   .contenedorC {
     display: grid;
-    grid-template-areas:
-      "header"
-      "sobreMi"
-      "footer";
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 699px) {
-  .contenedorC {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "sobreMi"
-      "footer";
-    width: 100%;
-  }
-}
-
-/*contacto*/
-@media (min-width: 700px) and (max-width: 1100px) {
+    grid-template-areas: "header" "sobreMi" "footer";
+    width: 100%; }
   .contenedorD {
     display: grid;
-    grid-template-areas:
-      "header"
-      "arranca"
-      "redes"
-      "formulario"
-      "footer";
-    width: 100%;
-    justify-content: center;
-  }
+    grid-template-areas: "header" "arranca" "redes" "formulario" "footer";
+    width: 100%; }
   .cajaForm {
-    width: 100%;
+    width: 90%;
     align-items: center;
     text-align: center;
     position: relative;
-    margin: 0%;
-  }
-
+    margin: 0%; }
   .formulario {
     font-family: "Oswald", sans-serif;
-    color: white;
+    color: orangered;
     margin: 0;
     text-align: center;
     display: block;
-    align-items: center;
-  }
+    align-items: center; }
   .link {
-    text-align: center;
-  }
-}
-@media (max-width: 699px) {
-  .contenedorD {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "arranca"
-      "redes"
-      "formulario"
-      "footer";
-    width: 100%;
-  }
-
-  .cajaForm {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin: 0%;
-  }
-
-  .formulario {
-    font-family: "Oswald", sans-serif;
-    color: white;
-    margin: 0;
-    text-align: center;
-    display: block;
-    align-items: center;
-  }
-  .link {
-    text-align: center;
-  }
-}
-
-/*antropometria*/
-@media (min-width: 700px) and (max-width: 1100px) {
+    text-align: center; }
   .contenedorE {
     display: grid;
-    grid-template-areas:
-      "header"
-      "antro"
-      "cajaAntro"
-      "footer";
+    grid-template-areas: "header" "antro" "cajaAntro" "footer" !important;
     width: 100%;
-    justify-content: center;
-  }
+    justify-content: center; }
   .logoSf {
-    align-items: center;
-  }
-}
-
-@media (max-width: 699px) {
-  .contenedorE {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "antro"
-      "cajaAntro"
-      "footer" !important
-      ; /*me rindo, no entiendo donde se desacomodo el footer en esta pagina*/
-    width: 100%;
-    justify-content: center;
-  }
-  .logoSf {
-    align-items: center;
-  }
+    align-items: center; }
   .footer {
-    display: block;
-  }
-}
+    display: block; } }

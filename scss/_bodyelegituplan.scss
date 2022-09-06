@@ -1,0 +1,61 @@
+/*SERVICIOS/*/
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "servicios servicios servicios"
+    "presencial videollamada virtual"
+    "footer footer footer";
+
+  header {
+    grid-area: "header";
+  }
+ 
+  div {
+    color: $color_2;
+    font-style: $font-family_1;
+    overflow-y: hidden;
+
+    
+  }
+  section.servicios {
+    grid-area: "presencial";
+    grid-area: "virtual";
+    grid-area: "videollamada";
+    display: grid-row;
+    border-color:$color_2 ;
+    border-style: dotted;
+    display: block;
+    text-align: center;
+    margin: 3rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    &:hover {
+      display: grid-row;
+      background-color: grey;
+      height: auto;
+      width: 50rem;
+
+
+    
+      }
+      section button {
+        border-radius: 5px;
+        background-color: papayawhip;
+        border-color: peachpuff;
+        cursor: pointer;
+        display: block;
+        align-items: center;
+      
+      }
+      .colorBoton {
+        background-color: papayawhip;
+        border-color: peachpuff;
+      }
+
+      footer {
+        grid-area: "footer";
+      }
+    }
+  }
+

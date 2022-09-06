@@ -1,0 +1,31 @@
+
+@import "variables";
+@import "header";
+@import "bodyindex";
+@import "bodysobremi";
+@import "bodyelegituplan";
+@import "bodyantropometria";
+@import "bodycontacto";
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap";
+@import "maps";
+@import "extend";
+@import "mixin";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+	font-size: 2rem;
+	background-color: $background-color_2;
+	width: 100%;
+}
+
+@import "footer";
+@import "mediaqueries";

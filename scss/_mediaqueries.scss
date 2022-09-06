@@ -1,0 +1,189 @@
+
+  /*responsive*/
+  @media (min-width: 700px) and (max-width: 1100px) {
+	.contenedor {
+		display: grid;
+		grid-template-areas: "header" "carrusel" "cambio" "beneficios" "footer";
+		width: 100%;
+		justify-content: center;
+	}
+	section {
+		text-align: center;
+		button {
+			width: 100px;
+			height: 50px;
+			margin-left: 30rem;
+		}
+	}
+
+  .parrafo {
+    text-align: center;
+  }
+
+  .link {
+    text-align: center;
+  }
+	.contenedorB {
+		display: grid;
+		grid-template-areas: "header" "servicios" "presencial" "videollamada" "virtual" "footer";
+		width: 100%;
+		justify-content: center;
+	}
+	.presencial {
+		align-items: center;
+	}
+	.videollamada {
+		align-items: center;
+	}
+	.virtual {
+		align-items: center;
+	}
+	.contenedorC {
+		display: grid;
+		grid-template-areas: "header" "sobreMi" "footer";
+		width: 100%;
+		justify-content: center;
+	}
+	.contenedorD {
+		display: grid;
+		grid-template-areas: "header" "arranca" "redes" "formulario" "footer";
+		width: 100%;
+		justify-content: center;
+	}
+	.cajaForm {
+		width: 80%;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		margin: 0%;
+	}
+	.formulario {
+		font-family: $font-family_1;
+		color: $color_1;
+		margin: 0;
+		text-align: center;
+		display: block;
+		align-items: center;
+	}
+	.link {
+		text-align: center;
+	}
+	.contenedorE {
+		display: grid;
+		grid-template-areas: "header" "antro" "cajaAntro" "footer";
+		width: 100%;
+		justify-content: center;
+	}
+	.logoSf {
+		align-items: center;
+	}
+}
+@media (max-width: 699px) {
+	.contenedor {
+		display: grid;
+		grid-template-areas: "header" "carrusel" "cambio" "beneficios" "footer";
+		width: 100%;
+		justify-content: center;
+		
+	}
+	html {
+		
+		font-size: 50%;
+	}
+	header {
+		height: auto;
+		width: auto;
+	}
+	.cambios {
+		text-align: center;
+		display: block;
+	}
+	.beneficios {
+		text-align: center;
+		display: block;
+	}
+	 
+	footer {
+		
+		display:inline-block;
+		overflow-x: hidden;
+
+        .navFooter {
+            display: inline-block;
+			align-items: center;
+			
+          
+        }
+	}
+	.contenedorB {
+		display: grid;
+		grid-template-areas: "header" "servicios" "presencial" "videollamada" "virtual" "footer";
+		width: 100%;
+	}
+	.display {
+		display: block;
+		text-align: center;
+	}
+	.presencial {
+		align-items: center;
+	}
+	.videollamada {
+		align-items: center;
+	}
+	.virtual {
+		align-items: center;
+	}
+	section {
+		button {
+            align-items: center;
+		
+		}
+	}
+	.navFooter {
+		display: block ;     
+        
+        
+       
+       
+	}
+	.contenedorC {
+		display: grid;
+		grid-template-areas: "header" "sobreMi" "footer";
+		width: 100%;
+	}
+	.contenedorD {
+		display: grid;
+		grid-template-areas: "header" "arranca" "redes" "formulario" "footer";
+		width: 100%;
+	}
+	.cajaForm {
+		width: 90%;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		margin: 0%;
+	}
+	.formulario {
+		font-family: $font-family_1;
+		color: $color_1;
+		margin: 0;
+		text-align: center;
+		display: block;
+		align-items: center;
+    	}
+	.link {
+		text-align: center;
+	}
+	.contenedorE {
+		display: grid;
+		grid-template-areas: "header" "antro" "cajaAntro" "footer" !important;
+		width: 100%;
+		justify-content: center;
+	}
+	.logoSf {
+		align-items: center;
+	}
+	.footer {
+		display: block;
+	}
+}

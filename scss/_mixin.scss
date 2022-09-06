@@ -1,0 +1,10 @@
+@mixin parrafos {
+    text-align: center;
+  font-family: $font-family_1;
+  color: $color_2;
+  overflow-y: hidden;
+  margin: 3rem;
+}
+.parrafosConEstilo {
+    @include parrafos;
+}

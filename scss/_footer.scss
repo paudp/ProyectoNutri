@@ -1,0 +1,50 @@
+footer {
+  grid-area: footer;
+  background-color: $background-color_1;
+  width: 100%;
+  align-items: center;
+  
+  h3 {
+    margin-top: 3rem;
+    font-size: 4rem;
+    font-family: $font-family_1;
+    font-style: italic;
+    color: $color_1;
+    text-align: center;
+    overflow-y: hidden;
+  }
+  h4 {
+    color: $color_3;
+    text-align: center;
+    overflow-y: hidden;
+    margin-bottom: 0;
+  }
+
+  ul {
+    display: inline;
+    align-items: center;
+    margin-left: 42.5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-decoration: none;
+    .navFooter {
+      display: inline;
+      align-items: center;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color_2;
+      font-family: $font-family_2;
+      align-items: center;
+    }
+
+    li a img {
+      width: 5rem;
+      height: 5rem;
+      align-items: center;
+    }
+  }
+}

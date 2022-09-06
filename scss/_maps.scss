@@ -1,0 +1,8 @@
+//mapa//
+$estilo: (color:white, tamFuente: 3rem);
+
+
+.titulos {
+color: map-get($map: $estilo, $key:color );
+font-size: map-get($map: $estilo, $key:tamFuente );
+}
