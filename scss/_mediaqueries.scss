@@ -1,4 +1,6 @@
 /*responsive*/
+
+/*index*/
 @media (min-width: 700px) and (max-width: 1100px) {
   .contenedor {
     display: grid;
@@ -22,6 +24,7 @@
   .link {
     text-align: center;
   }
+  /*elegi tu plan*/
   .contenedorB {
     display: grid;
     grid-template-areas: "header" "servicios" "presencial" "videollamada" "virtual" "footer";
@@ -37,12 +40,16 @@
   .virtual {
     align-items: center;
   }
+
+  /*sobreMi*/
   .contenedorC {
     display: grid;
     grid-template-areas: "header" "sobreMi" "footer";
     width: 100%;
     justify-content: center;
   }
+
+  /*contacto*/
   .contenedorD {
     display: grid;
     grid-template-areas: "header" "arranca" "redes" "formulario" "footer";
@@ -67,6 +74,8 @@
   .link {
     text-align: center;
   }
+
+  /*antropoemtria*/
   .contenedorE {
     display: grid;
     grid-template-areas:
