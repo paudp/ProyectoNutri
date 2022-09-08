@@ -6,54 +6,56 @@ body.contenedorD {
     "arranca"
     "formulario"
     "footer";
+  .encabezado {
+    grid-area: encabezado;
+  }
+}
+section.Arranca {
+  grid-area: arranca;
 
-  section.Arranca {
-    h1 {
+  h1.none {
+    display: none;
+  }
+  h3.arranca {
+    a {
       color: $color_2;
-      grid-area: arranca;
+      text-decoration: none;
     }
+  }
+}
 
-    h3.arranca {
-      a {
-        color: $color_2;
-        text-decoration: none;
-      }
+section.formulario {
+  grid-area: formulario;
+
+  .cajaGrande {
+    border: $ancho-bordes;
+    margin-top: 0px;
+    padding: 10px;
+    position: relative;
+    grid-area: cajaGrande;
+
+    h2 {
+      display: none;
     }
   }
 
-  section.formulario {
-    grid-area: formulario;
+  .cajaForm {
+    border: $bordes-cajas $color_2 solid;
+    background-color: $fondos-animaciones;
+    margin: 2rem;
+    padding: 1rem;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+  }
 
-    .cajaGrande {
-      border: $ancho-bordes;
-      margin-top: 0px;
-      padding: 10px;
-      position: relative;
-      grid-area: cajaGrande;
-
-      h2 {
-        text-align: left;
-      }
-    }
-
-    .cajaForm {
-      border: $bordes-cajas $color_2 solid;
-      background-color: $fondos-animaciones;
-      margin: 2rem;
-      padding: 1rem;
-      position: relative;
-      align-items: center;
-      text-align: center;
-      width: 50%;
-    }
-
-    .formulario {
-      font-family: "Oswald", sans-serif;
-      color: white;
-
-      text-align: center;
-      display: block;
-      align-items: center;
-    }
+  .formulario {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-align: center;
+    display: block;
+    align-items: center;
   }
 }

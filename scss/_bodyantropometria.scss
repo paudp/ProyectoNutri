@@ -2,41 +2,64 @@
 
 body.contenedorE {
   width: 100%;
+  display: grid;
   grid-template-areas:
-    "header"
-    "antro"
-    "footer";
-  section.antro {
-    display: inline-block;
+    "header header"
+    "img cajaAntro"
+    "footer footer";
 
-    img {
-      width: 50rem;
-      height: 60rem;
-      display: inline-block;
+  section {
+    h1 {
+      color: $color_2;
+      font-size: 4rem;
+      text-align: center;
+      font-family: $font-family_1;
+      overflow-y: hidden;
     }
+    img {
+      width: 35%;
+      height: 40rem;
+      grid-area: img;
+      vertical-align: middle;
+      float: left;
+      margin-right: 15px;
+      margin-left: 5rem;
+      margin-top: 10rem;
+    }
+
     section.cajaAntro {
-      display: inline-block;
+      grid-area: cajaAntro;
       border: 0.5rem whitesmoke;
       border-style: dashed;
       padding: 1rem;
-      align-items: center;
       margin-top: 5rem;
-      width: 100%;
+      width: 60%;
       &:hover {
         background-color: $fondos-animaciones;
         align-items: center;
       }
-    }
 
-    header {
-      grid-area: header;
+      h2 {
+        color: $color_2;
+        font-size: 4rem;
+        text-align: center;
+        font-family: $font-family_1;
+      }
     }
-    nav {
-      grid-area: nav;
+    .parrafo {
+      color: $color_2;
+      font-size: 2rem;
+      text-align: center;
+      font-family: $font-family_2;
+      height: fit-content;
     }
+  }
 
-    footer {
-      grid-area: footer;
-    }
+  header {
+    grid-area: header;
+  }
+
+  footer {
+    grid-area: footer;
   }
 }

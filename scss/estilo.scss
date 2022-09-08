@@ -1,4 +1,3 @@
-
 @import "variables";
 @import "header";
 @import "bodyindex";
@@ -11,7 +10,6 @@
 @import "extend";
 @import "mixin";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +20,13 @@ html {
 }
 
 body {
-	font-size: 2rem;
-	background-color: $background-color_2;
-	width: 100%;
+  font-size: 2rem;
+  background-color: $background-color_2;
+  width: 100%;
+
+  h1 {
+    overflow-y: hidden;
+  }
 }
 
 @import "footer";

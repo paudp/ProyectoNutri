@@ -15,6 +15,12 @@
     grid-area: carrusel;
   }
 
+  .cambio {
+    grid-area: cambio;
+  }
+  .beneficios {
+    grid-area: beneficios;
+  }
   section.principal {
     border-color: $color_2;
     border-style: dotted;
@@ -26,7 +32,7 @@
   }
 }
 
-h1 {
+.none {
   display: none;
 }
 h2 {

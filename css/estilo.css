@@ -7,20 +7,20 @@ header {
     height: 20rem; }
   header li {
     color: orangered;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
     font-weight: bold;
     list-style-type: none;
     display: inline;
     margin: 1rem; }
     header li a {
       color: orangered;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
       margin: 2rem;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
       color: orangered;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
       align-items: center; }
 
 /*	SECTION ARREGLAR EL CARRUSEL */
@@ -31,6 +31,10 @@ header {
   .contenedor section.carrusel {
     margin-top: 0;
     grid-area: carrusel; }
+  .contenedor .cambio {
+    grid-area: cambio; }
+  .contenedor .beneficios {
+    grid-area: beneficios; }
   .contenedor section.principal {
     border-color: white;
     border-style: dotted;
@@ -40,7 +44,7 @@ header {
     margin-top: 2rem;
     padding: 2rem; }
 
-h1 {
+.none {
   display: none; }
 
 h2 {
@@ -70,7 +74,7 @@ p {
   margin: 3rem; }
 
 body.contenedorC {
-  grid-template-areas: "footer" "sobreMi" "footer"; }
+  grid-template-areas: "header" "sobreMi" "footer"; }
   body.contenedorC section.sobreMi {
     border-color: white;
     border-style: dotted;
@@ -83,9 +87,11 @@ body.contenedorC {
       grid-area: sobreMi; }
     body.contenedorC section.sobreMi h1 .titulos, body.contenedorC section.sobreMi h1 .parrafo {
       color: orangered;
-      font-size: 5rem;
+      font-size: 4rem;
       text-align: center;
-      font-family: "Oswald", sans-serif; }
+      font-family: "Oswald", sans-serif;
+      height: 5rem;
+      overflow-y: hidden; }
     body.contenedorC section.sobreMi p {
       text-align: center;
       font-family: "Oswald", sans-serif;
@@ -97,107 +103,152 @@ body.contenedorC {
       text-decoration: none; }
 
 /*SERVICIOS/*/
-body {
-  display: grid;
-  grid-template-areas: "header header header" "servicios servicios servicios" "presencial videollamada virtual" "footer footer footer"; }
-  body header {
-    grid-area: "header"; }
-  body div {
-    color: white;
-    font-style: "Oswald", sans-serif;
-    overflow-y: hidden; }
-  body section.servicios {
-    grid-area: "presencial";
-    grid-area: "virtual";
-    grid-area: "videollamada";
-    display: grid-row;
-    border-color: white;
-    border-style: dotted;
-    display: block;
+body div {
+  color: white;
+  font-style: "Oswald", sans-serif;
+  overflow-y: hidden; }
+  body div .titulos h1, body div .parrafo h1 {
+    color: orangered;
+    font-size: 4rem;
     text-align: center;
-    margin: 3rem;
-    margin-top: 2rem;
-    padding: 2rem; }
-    body section.servicios:hover {
-      display: grid-row;
-      background-color: grey;
-      height: auto;
-      width: 50rem; }
-    body section.servicios section button {
-      border-radius: 5px;
-      background-color: papayawhip;
-      border-color: peachpuff;
-      cursor: pointer;
-      display: block;
-      align-items: center; }
-    body section.servicios .colorBoton {
-      background-color: papayawhip;
-      border-color: peachpuff; }
-    body section.servicios footer {
-      grid-area: "footer"; }
+    font-family: "Oswald", sans-serif;
+    height: 5rem; }
+  body div .titulos h2, body div .parrafo h2 {
+    color: orangered;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    height: 5rem; }
+  body div .titulos h3 .parrafo, body div .parrafo h3 .parrafo {
+    color: orangered;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    height: 5rem; }
+
+body section.servicios {
+  display: grid;
+  border-color: white;
+  border-style: dotted;
+  display: block;
+  text-align: center;
+  margin: 3rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  grid-area: servicios; }
+  body section.servicios p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
+    height: fit-content; }
+  body section.servicios:hover {
+    background-color: grey; }
+  body section.servicios .presencial {
+    grid-area: "presencial";
+    width: 45rem; }
+  body section.servicios .virtual {
+    grid-area: "virtual";
+    width: 45rem; }
+  body section.servicios .videollamada {
+    grid-area: "videollamada";
+    width: 45rem; }
+  body section.servicios section button {
+    border-radius: 5px;
+    background-color: papayawhip;
+    border-color: peachpuff;
+    cursor: pointer;
+    align-items: center; }
+  body section.servicios .colorBoton {
+    background-color: papayawhip;
+    border-color: peachpuff; }
 
 /*ANTROPOMETRIAS*/
 body.contenedorE {
   width: 100%;
-  grid-template-areas: "header" "antro" "footer"; }
-  body.contenedorE section.antro {
-    display: inline-block; }
-    body.contenedorE section.antro img {
-      width: 50rem;
-      height: 60rem;
-      display: inline-block; }
-    body.contenedorE section.antro section.cajaAntro {
-      display: inline-block;
-      border: 0.5rem whitesmoke;
-      border-style: dashed;
-      padding: 1rem;
-      align-items: center;
-      margin-top: 5rem;
-      width: 100%; }
-      body.contenedorE section.antro section.cajaAntro:hover {
-        background-color: grey;
-        align-items: center; }
-    body.contenedorE section.antro header {
-      grid-area: header; }
-    body.contenedorE section.antro nav {
-      grid-area: nav; }
-    body.contenedorE section.antro footer {
-      grid-area: footer; }
+  display: grid;
+  grid-template-areas: "header header" "img cajaAntro" "footer footer"; }
+  body.contenedorE section h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    overflow-y: hidden; }
+  body.contenedorE section img {
+    width: 35%;
+    height: 40rem;
+    grid-area: img;
+    vertical-align: middle;
+    float: left;
+    margin-right: 15px;
+    margin-left: 5rem;
+    margin-top: 10rem; }
+  body.contenedorE section section.cajaAntro {
+    grid-area: cajaAntro;
+    border: 0.5rem whitesmoke;
+    border-style: dashed;
+    padding: 1rem;
+    margin-top: 5rem;
+    width: 60%; }
+    body.contenedorE section section.cajaAntro:hover {
+      background-color: grey;
+      align-items: center; }
+    body.contenedorE section section.cajaAntro h2 {
+      color: white;
+      font-size: 4rem;
+      text-align: center;
+      font-family: "Oswald", sans-serif; }
+  body.contenedorE section .parrafo {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
+    height: fit-content; }
+  body.contenedorE header {
+    grid-area: header; }
+  body.contenedorE footer {
+    grid-area: footer; }
 
 /*contacto*/
 body.contenedorD {
   grid-template-areas: "encabezado" "arranca" "formulario" "footer"; }
-  body.contenedorD section.Arranca h1 {
-    color: white;
-    grid-area: arranca; }
-  body.contenedorD section.Arranca h3.arranca a {
+  body.contenedorD .encabezado {
+    grid-area: encabezado; }
+
+section.Arranca {
+  grid-area: arranca; }
+  section.Arranca h1.none {
+    display: none; }
+  section.Arranca h3.arranca a {
     color: white;
     text-decoration: none; }
-  body.contenedorD section.formulario {
-    grid-area: formulario; }
-    body.contenedorD section.formulario .cajaGrande {
-      border: 2.5px;
-      margin-top: 0px;
-      padding: 10px;
-      position: relative;
-      grid-area: cajaGrande; }
-      body.contenedorD section.formulario .cajaGrande h2 {
-        text-align: left; }
-    body.contenedorD section.formulario .cajaForm {
-      border: 4px white solid;
-      background-color: grey;
-      margin: 2rem;
-      padding: 1rem;
-      position: relative;
-      align-items: center;
-      text-align: center;
-      width: 50%; }
-    body.contenedorD section.formulario .formulario {
-      font-family: "Oswald", sans-serif;
-      color: white;
-      text-align: center;
-      display: block;
-      align-items: center; }
+
+section.formulario {
+  grid-area: formulario; }
+  section.formulario .cajaGrande {
+    border: 2.5px;
+    margin-top: 0px;
+    padding: 10px;
+    position: relative;
+    grid-area: cajaGrande; }
+    section.formulario .cajaGrande h2 {
+      display: none; }
+  section.formulario .cajaForm {
+    border: 4px white solid;
+    background-color: grey;
+    margin: 2rem;
+    padding: 1rem;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%; }
+  section.formulario .formulario {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-align: center;
+    display: block;
+    align-items: center; }
 
 .titulos, .parrafo {
   color: white;
@@ -231,6 +282,8 @@ body {
   font-size: 2rem;
   background-color: #ff9338;
   width: 100%; }
+  body h1 {
+    overflow-y: hidden; }
 
 footer {
   grid-area: footer;
@@ -265,7 +318,7 @@ footer {
       text-decoration: none;
       text-transform: uppercase;
       color: white;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
       align-items: center; }
     footer ul li a img {
       width: 5rem;
@@ -327,7 +380,7 @@ footer {
     text-align: center; }
   .contenedorE {
     display: grid;
-    grid-template-areas: "header" "antro" "cajaAntro" "footer";
+    grid-template-areas: "header" "img" "footer";
     width: 100%;
     justify-content: center; }
   .logoSf {
@@ -377,31 +430,25 @@ footer {
     display: grid;
     grid-template-areas: "header" "sobreMi" "footer";
     width: 100%; }
-  .contenedorD {
+  body.contenedorD {
     display: grid;
-    grid-template-areas: "header" "arranca" "redes" "formulario" "footer";
-    width: 100%; }
-  .cajaForm {
-    width: 90%;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin: 0%; }
-  .formulario {
-    font-family: "Oswald", sans-serif;
-    color: orangered;
-    margin: 0;
-    text-align: center;
-    display: block;
+    grid-template-areas: "encabezado" "arranca" "formulario" "footer"; }
+  body.contenedorE {
+    display: grid;
+    grid-template-areas: "header" "img" "cajaAntro" "footer"; }
+    body.contenedorE section img {
+      width: 100%;
+      margin-left: 0; }
+    body.contenedorE section section.cajaAntro {
+      grid-area: cajaAntro;
+      padding: 1rem;
+      margin-top: 5rem;
+      width: 100%; }
+  img.logoSf {
     align-items: center; }
-  .link {
-    text-align: center; }
-  .contenedorE {
-    display: grid;
-    grid-template-areas: "header" "antro" "cajaAntro" "footer" !important;
+  footer {
+    display: inline-block;
     width: 100%;
-    justify-content: center; }
-  .logoSf {
     align-items: center; }
-  .footer {
-    display: block; } }
+    footer ul {
+      margin-left: 40%; } }

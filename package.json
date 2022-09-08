@@ -251,5 +251,5 @@
     "yallist": "^4.0.0",
     "validate-npm-package-license": "^3.0.4"
   },
-  "description": ""
+  "description": "proyectocoder\r Modifique el peso de las imágenes y borre metadatos.\r Mejoré los títulos de las páginas\r Incluí una descripción en cada página."
 }

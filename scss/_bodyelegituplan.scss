@@ -1,61 +1,81 @@
 /*SERVICIOS/*/
 body {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "servicios servicios servicios"
-    "presencial videollamada virtual"
-    "footer footer footer";
-
-  header {
-    grid-area: "header";
-  }
- 
   div {
     color: $color_2;
     font-style: $font-family_1;
     overflow-y: hidden;
+    .titulos {
+      h1 {
+        color: $color_1;
+        font-size: 4rem;
+        text-align: center;
+        font-family: $font-family_1;
+        height: 5rem;
+      }
+      h2 {
+        color: $color_1;
+        font-size: 4rem;
+        text-align: center;
+        font-family: $font-family_1;
+        height: 5rem;
+      }
 
-    
+      h3 {
+        .parrafo {
+          color: $color_1;
+          font-size: 4rem;
+          text-align: center;
+          font-family: $font-family_1;
+          height: 5rem;
+        }
+      }
+    }
   }
   section.servicios {
-    grid-area: "presencial";
-    grid-area: "virtual";
-    grid-area: "videollamada";
-    display: grid-row;
-    border-color:$color_2 ;
+    display: grid;
+    border-color: $color_2;
     border-style: dotted;
     display: block;
     text-align: center;
     margin: 3rem;
     margin-top: 2rem;
     padding: 2rem;
+
+    p {
+      color: $color_2;
+      font-size: 2rem;
+      text-align: center;
+      font-family: $font-family_2;
+      height: fit-content;
+    }
     &:hover {
-      display: grid-row;
-      background-color: grey;
-      height: auto;
-      width: 50rem;
+      background-color: $fondos-animaciones;
+    }
 
+    grid-area: servicios;
+    .presencial {
+      grid-area: "presencial";
+      width: 45rem;
+    }
+    .virtual {
+      grid-area: "virtual";
+      width: 45rem;
+    }
+    .videollamada {
+      grid-area: "videollamada";
+      width: 45rem;
+    }
 
-    
-      }
-      section button {
-        border-radius: 5px;
-        background-color: papayawhip;
-        border-color: peachpuff;
-        cursor: pointer;
-        display: block;
-        align-items: center;
-      
-      }
-      .colorBoton {
-        background-color: papayawhip;
-        border-color: peachpuff;
-      }
-
-      footer {
-        grid-area: "footer";
-      }
+    section button {
+      border-radius: 5px;
+      background-color: papayawhip;
+      border-color: peachpuff;
+      cursor: pointer;
+      align-items: center;
+    }
+    .colorBoton {
+      background-color: papayawhip;
+      border-color: peachpuff;
     }
   }
-
+}

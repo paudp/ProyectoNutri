@@ -1,38 +1,40 @@
 body.contenedorC {
-grid-template-areas: 
-"footer"
-"sobreMi"
-"footer";
-  
-section.sobreMi {
-  border-color: $color_2;
-  border-style: dotted;
-  display: block;
-  text-align: center;
-  margin: 3rem;
-  margin-top: 2rem;
-  padding: 2rem;
-  .sobremi {
-  grid-area: sobreMi;
-  }
-  h1 {
-    .titulos {
-      color: $color_1;
-      font-size: 5rem;
+  grid-template-areas:
+    "header"
+    "sobreMi"
+    "footer";
+
+  section.sobreMi {
+    border-color: $color_2;
+    border-style: dotted;
+    display: block;
+    text-align: center;
+    margin: 3rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    .sobremi {
+      grid-area: sobreMi;
+    }
+    h1 {
+      .titulos {
+        color: $color_1;
+        font-size: 4rem;
+        text-align: center;
+        font-family: $font-family_1;
+        height: 5rem;
+        overflow-y: hidden;
+      }
+    }
+    p {
       text-align: center;
       font-family: $font-family_1;
+      color: $color_2;
+      overflow-y: hidden;
+      margin: 3rem;
+    }
+    p a {
+      color: $color_2;
+      text-decoration: none;
     }
   }
-  p {
-    text-align: center;
-    font-family: $font-family_1;
-    color: $color_2;
-    overflow-y: hidden;
-    margin: 3rem;
-  }
-  p a {
-    color: $color_2;
-    text-decoration: none;
-  }
-}
 }
