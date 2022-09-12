@@ -24,9 +24,9 @@ body {
   background-color: $background-color_2;
   width: 100%;
 
-  h1 {
-    overflow-y: hidden;
-  }
+main {
+  overflow-y: hidden;
+}
 }
 
 @import "footer";

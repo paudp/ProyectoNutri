@@ -85,18 +85,16 @@
       "footer";
     width: 100%;
     justify-content: center;
-
-    }
+  }
   .logoSf {
     align-items: center;
   }
 }
 @media (max-width: 699px) {
-
   footer {
-    .ul{
-     margin-left: auto;
-      }
+    .ul {
+      margin-left: auto;
+    }
   }
   .contenedor {
     display: grid;
@@ -120,7 +118,7 @@
     display: block;
   }
 
-    .contenedorB {
+  .contenedorB {
     display: grid;
     grid-template-areas: "header" "servicios" "presencial" "videollamada" "virtual" "footer";
     width: 100%;
@@ -154,7 +152,6 @@
   body.contenedorD {
     display: grid;
     grid-template-areas: "encabezado" "arranca" "formulario" "footer";
-  
   }
 
   body.contenedorE {
@@ -181,5 +178,4 @@
   img.logoSf {
     align-items: center;
   }
-  
 }
