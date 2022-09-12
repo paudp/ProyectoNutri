@@ -155,13 +155,12 @@ body section.servicios {
     width: 45rem; }
   body section.servicios section button {
     border-radius: 5px;
-    background-color: papayawhip;
-    border-color: peachpuff;
     cursor: pointer;
     align-items: center; }
   body section.servicios .colorBoton {
     background-color: papayawhip;
-    border-color: peachpuff; }
+    border-color: peachpuff;
+    color: grey; }
 
 /*ANTROPOMETRIAS*/
 body.contenedorE {
@@ -189,7 +188,8 @@ body.contenedorE {
     border-style: dashed;
     padding: 1rem;
     margin-top: 5rem;
-    width: 60%; }
+    width: 60%;
+    justify-content: center; }
     body.contenedorE section section.cajaAntro:hover {
       background-color: grey;
       align-items: center; }
@@ -211,6 +211,7 @@ body.contenedorE {
 
 /*contacto*/
 body.contenedorD {
+  margin: auto;
   grid-template-areas: "encabezado" "arranca" "formulario" "footer"; }
   body.contenedorD .encabezado {
     grid-area: encabezado; }
@@ -241,8 +242,8 @@ section.formulario {
     position: relative;
     align-items: center;
     text-align: center;
-    width: 50%;
-    margin-left: 25%; }
+    width: 80%;
+    margin-left: 10%; }
   section.formulario .formulario {
     font-family: "Oswald", sans-serif;
     color: white;
@@ -286,7 +287,6 @@ body {
     overflow-y: hidden; }
 
 footer {
-  grid-area: footer;
   background-color: white;
   width: 100%;
   align-items: center; }
@@ -304,13 +304,14 @@ footer {
     overflow-y: hidden;
     margin-bottom: 0; }
   footer ul {
-    display: inline;
+    display: inline-flexbox;
     align-items: center;
-    margin-left: 42.5%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center;
+    justify-content: center; }
     footer ul .navFooter {
       display: inline;
       align-items: center; }
@@ -326,6 +327,7 @@ footer {
       align-items: center; }
 
 /*responsive*/
+/*index*/
 @media (min-width: 700px) and (max-width: 1100px) {
   .contenedor {
     display: grid;
@@ -342,6 +344,7 @@ footer {
     text-align: center; }
   .link {
     text-align: center; }
+  /*elegi tu plan*/
   .contenedorB {
     display: grid;
     grid-template-areas: "header" "servicios" "presencial" "videollamada" "virtual" "footer";
@@ -353,11 +356,13 @@ footer {
     align-items: center; }
   .virtual {
     align-items: center; }
+  /*sobreMi*/
   .contenedorC {
     display: grid;
     grid-template-areas: "header" "sobreMi" "footer";
     width: 100%;
     justify-content: center; }
+  /*contacto*/
   .contenedorD {
     display: grid;
     grid-template-areas: "header" "arranca" "redes" "formulario" "footer";
@@ -378,15 +383,18 @@ footer {
     align-items: center; }
   .link {
     text-align: center; }
+  /*antropoemtria*/
   .contenedorE {
     display: grid;
-    grid-template-areas: "header" "img" "footer";
+    grid-template-areas: "header" "img" "cajaAntro" "footer";
     width: 100%;
     justify-content: center; }
   .logoSf {
     align-items: center; } }
 
 @media (max-width: 699px) {
+  footer .ul {
+    margin-left: auto; }
   .contenedor {
     display: grid;
     grid-template-areas: "header" "carrusel" "cambio" "beneficios" "footer";
@@ -403,12 +411,6 @@ footer {
   .beneficios {
     text-align: center;
     display: block; }
-  footer {
-    display: inline-block;
-    overflow-x: hidden; }
-    footer .navFooter {
-      display: inline-block;
-      align-items: center; }
   .contenedorB {
     display: grid;
     grid-template-areas: "header" "servicios" "presencial" "videollamada" "virtual" "footer";
@@ -443,12 +445,7 @@ footer {
       grid-area: cajaAntro;
       padding: 1rem;
       margin-top: 5rem;
-      width: 100%; }
+      width: 100%;
+      justify-content: center; }
   img.logoSf {
-    align-items: center; }
-  footer {
-    display: inline-block;
-    width: 100%;
-    align-items: center; }
-    footer ul {
-      margin-left: 40%; } }
+    align-items: center; } }

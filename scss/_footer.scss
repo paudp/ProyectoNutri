@@ -1,5 +1,4 @@
 footer {
-  grid-area: footer;
   background-color: $background-color_1;
   width: 100%;
   align-items: center;
@@ -21,17 +20,18 @@ footer {
   }
 
   ul {
-    display: inline;
+    display: inline-flexbox;
     align-items: center;
-    margin-left: 42.5%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
     text-decoration: none;
+    text-align: center;
+    justify-content: center;
     .navFooter {
       display: inline;
       align-items: center;
-    }
+          }
 
     a {
       text-decoration: none;

@@ -81,15 +81,23 @@
     grid-template-areas:
       "header"
       "img"
+      "cajaAntro"
       "footer";
     width: 100%;
     justify-content: center;
-  }
+
+    }
   .logoSf {
     align-items: center;
   }
 }
 @media (max-width: 699px) {
+
+  footer {
+    .ul{
+     margin-left: auto;
+      }
+  }
   .contenedor {
     display: grid;
     grid-template-areas: "header" "carrusel" "cambio" "beneficios" "footer";
@@ -112,16 +120,7 @@
     display: block;
   }
 
-  footer {
-    display: inline-block;
-    overflow-x: hidden;
-
-    .navFooter {
-      display: inline-block;
-      align-items: center;
-    }
-  }
-  .contenedorB {
+    .contenedorB {
     display: grid;
     grid-template-areas: "header" "servicios" "presencial" "videollamada" "virtual" "footer";
     width: 100%;
@@ -155,6 +154,7 @@
   body.contenedorD {
     display: grid;
     grid-template-areas: "encabezado" "arranca" "formulario" "footer";
+  
   }
 
   body.contenedorE {
@@ -174,18 +174,12 @@
         padding: 1rem;
         margin-top: 5rem;
         width: 100%;
+        justify-content: center;
       }
     }
   }
   img.logoSf {
     align-items: center;
   }
-  footer {
-    display: inline-block;
-    width: 100%;
-    align-items: center;
-    ul {
-      margin-left: 40%;
-    }
-  }
+  
 }

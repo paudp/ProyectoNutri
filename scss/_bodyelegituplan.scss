@@ -68,14 +68,13 @@ body {
 
     section button {
       border-radius: 5px;
-      background-color: papayawhip;
-      border-color: peachpuff;
       cursor: pointer;
       align-items: center;
     }
     .colorBoton {
-      background-color: papayawhip;
-      border-color: peachpuff;
+      background-color: $fondo-boton1;
+      border-color: $color-boton1;
+      color: $color_3;
     }
   }
 }
